@@ -1,2 +1,8 @@
 //Utils
-@import "./utils/variables"
+@import "./utils/variables";
+@import "./utils/placeholder";
+@import "./utils/mixin";
+
+//Base style
+@import "./components/baseStyle";
+@import "./components/header";

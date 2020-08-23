@@ -1,3 +1,4 @@
+$main-backgound-color: #12131A;
 $main-text-color: #9A9AAB;
 $main-header-color: #ffff;
 $second-header-color: #FBCC43;
@@ -12,3 +13,7 @@ $font-family: 'Inter', sans-serif;
 $mobile: 375px;
 $pre-mobile: $mobile - 1px;
 $post-mobile: $mobile + 1px;
+
+$desktop: 1440px;
+$pre-desktop: $desktop - 1px;
+$post-desktop: $desktop + 1px;

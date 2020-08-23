@@ -1,0 +1,19 @@
+.container--header {
+    display: flex;
+    justify-content: space-between;
+    .navbutton {
+        display: block;
+
+        &--free{
+            margin-left: 10px;
+            max-height: 48px;
+        border: 1px solid white;
+        border-radius: 40px;
+        background-color: linear-gradient(180deg, #794AFF 0%, #642EFF 100%);
+        }
+    }
+    ul {
+        display: flex;
+        justify-content: space-evenly;
+    }
+}
