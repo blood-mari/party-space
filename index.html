@@ -25,9 +25,9 @@
                 </svg> -->
             </a>
             <nav>
-                <ul>
-                    <li><a class="navbutton" href="">Scedule a demo</a> </li>
-                    <li><a class="navbutton navbutton--free" href="">Try it for free</a> </li>
+                <ul class="navbutton__list">
+                    <li><a class="navbutton__item" href="">Scedule a demo</a> </li>
+                    <li><a class="navbutton__item navbutton__item--free" href="">Try it for free</a> </li>
                 </ul>
             </nav>
         </div>
@@ -46,7 +46,7 @@
                     <li><a href="">Scedule a demo</a></li>
                     <li>
                         <a href="">Try it for free
-                          <svg>
+                          <svg width="12" hight="5">
                             <use href="./images/sprite.svg#arrow"></use> </svg>
                         </a>
                     </li>
@@ -62,7 +62,7 @@
                         From small after-party sessions to enterprise-level corporate celebrations, Party.space allows you to host interactive virtual events of any size or complexity from the convenience of a single platform.
                     </p>
                     <a href="">Try party.space
-                        <svg>
+                        <svg width="12" hight="5">
                         <use href="./images/sprite.svg#arrow"></use>
                         </svg>
                     </a>
@@ -89,21 +89,23 @@
                           srcset="./images/features/mass-events-375.webp    306w,
                             ./images/mass-events@2x-375.webp 612w, ./images/mass-events@3x-375.webp 1125w
                           "
-                          media="(min-width: 50px)"
+                          media="(max-width: 1439px)"
                           type="image/webp"
                           sizes="100vw"
                         />
 
                         <source
                           srcset="./images/features/mass-events-375.jpg    306w,
-                            ./images/mass-events@2x-375.jpg 612w, ./images/mass-events@3x-375.jpg 1125w
+                          ./images/features/mass-events@2x-375.jpg 612w, ./images/mass-events@3x-375.jpg 1125w
                           "
-                          media="(min-width: 50px)"
+                          media="(max-width: 1439px)"
                           type="image/jpg"
                           sizes="100vw"
                         />
 
-                        <img src="./images/features/mass-events-375.jpg" alt="conference hall"></picture>
+                        <img src="./images/features/mass-events-375.jpg" alt="conference hall"/>
+                    </picture>
+
                     <h3>Mass events</h3>
                     <p>
                         Host full-featured events with multi-stage streaming, round-tables, keynote sessions, and cocktail parties for an unlimited number of attendees.
