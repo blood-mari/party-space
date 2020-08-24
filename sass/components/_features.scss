@@ -1,0 +1,118 @@
+.container {
+    &--features {
+        padding-top: 15px;
+        padding-bottom: 20px;
+    }
+}
+
+.features{
+    &__title{
+        color: #fff;
+        font-size: 27px;
+        line-height: 1.25em;
+        margin-bottom: 17px;
+
+        .accentfeatures {
+            color: #47B983;
+            transform: rotate(-180deg);
+        }
+    }
+    &__description {
+        font-size: 1.1em;
+        line-height: 1.56em;
+        margin-bottom: 30px;
+    }
+
+    &__item {
+        flex-wrap: wrap;
+
+        &__pairs{
+            display: inline-flex;
+            align-items: center;
+        }
+
+        .itemtitle {
+            color: #fff;
+            font-size: 20px;
+            line-height: 1.25em;
+        }
+
+        .itemdescribe {
+            font-size: 15px;
+            line-height: 1.56em;
+            margin-bottom: 30px;
+            margin-top: 10px;
+        }
+    }
+
+    &__imageblock {
+        min-width: 54px;
+        min-height: 54px;
+        border-radius: 12px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 15px;
+
+
+
+        &.customize{
+            background-image: linear-gradient(180deg, #FFD867 0%, #FBCC43 100%);
+            box-shadow: inset 0px 4px 4px #FFE7A2, inset 0px -4px 4px rgba(0, 0, 0, 0.25);
+
+        }
+
+        &.volume {
+            background-image: linear-gradient(180deg, #8155FF 0%, #642EFF 100%);
+            box-shadow: inset 0px 4px 4px #9570FF, inset 0px -4px 4px rgba(0, 0, 0, 0.25);
+        }
+
+        &.chat{
+            background-image: linear-gradient(180deg, #3CBDF8 0%, #0C9FE2 100%);
+            box-shadow: inset 0px 4px 4px #70D2FF, inset 0px -4px 4px rgba(0, 0, 0, 0.25);
+        }
+
+        &.tribune {
+            background-image: linear-gradient(180deg, #5DCC97 0%, #28B070 100%);
+            box-shadow: inset 0px 4px 4px #6CE7AC, inset 0px -4px 4px rgba(0, 0, 0, 0.25);
+        }
+
+        &.content {
+            background-image: linear-gradient(180deg, #FF9255 0%, #FF922E 100%);
+            box-shadow: inset 0px 4px 4px #FFB58A, inset 0px -4px 4px rgba(0, 0, 0, 0.25);
+        }
+
+        &.interactiv {
+            background-image: linear-gradient(180deg, #FF5588 0%, #FF2E53 100%);
+            box-shadow: inset 0px 4px 4px #FF96B4, inset 0px -4px 4px rgba(0, 0, 0, 0.25);
+        }
+
+        &.document {
+            background-image: linear-gradient(180deg, #8155FF 0%, #642EFF 100%);
+            box-shadow: inset 0px 4px 4px #9570FF, inset 0px -4px 4px rgba(0, 0, 0, 0.25);
+
+        }
+
+        &.network {
+            background-image: linear-gradient(180deg, #5DCC97 0%, #28B070 100%);
+            box-shadow: inset 0px 4px 4px #6CE7AC, inset 0px -4px 4px rgba(0, 0, 0, 0.25);
+
+        }
+
+        &.reaction {
+            background-image: linear-gradient(180deg, #FFD867 0%, #FBCC43 100%);
+            box-shadow: inset 0px 4px 4px #FFE7A2, inset 0px -4px 4px rgba(0, 0, 0, 0.25);
+        }
+    }
+
+    &__icon {
+        fill: $main-header-color;
+    }
+
+    @media screen and (max-width: 768px) {
+        &__icon--right, &__icon--left {
+            display: none;
+        }
+    }
+
+}

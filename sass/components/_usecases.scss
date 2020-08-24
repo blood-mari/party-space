@@ -1,0 +1,62 @@
+.container {
+    &--usecases {
+        @extend %section-padding-mobile;
+        padding-top: 15px;
+    }
+}
+.usecases {
+    &__title {
+        color: $main-header-color;
+        font-size: 27px;
+        line-height: 1.25em;
+        margin-bottom: 17px;
+        .colorize {
+            color: #FBCC43;
+        }
+    }
+    &__description {
+        font-size: 1.1em;
+        line-height: 1.56em;
+        margin-bottom: 30px;
+    }
+
+    &__link {
+        display: inline-block;
+        @extend %button;
+        @extend %menu-button;
+        font-size: 1em;
+        color: #fff;
+        background-image: linear-gradient(180deg, #FBCC43 0%, #F0BD28 100%);
+
+        margin-bottom: 36px;
+
+        @media screen and (max-width:500px){
+            min-width: 80px;
+            padding: 12px 24px;
+        }
+    }
+
+    &__image {
+        border-radius: 13.63px;
+        margin-bottom: 19px;
+    }
+
+    &--card {
+        background: linear-gradient(to bottom, #474A5A 0%, #343645 100%);
+        padding: 11px 10px 34px;
+        border-radius: 13.63px;
+
+        .card {
+            &__title {
+            color: $main-header-color;
+            font-size: 1.5em;
+            margin-bottom: 11px;
+        }
+        &__description {
+            line-height: 1.53em;
+            color: #CDCDDB;
+        }
+    }
+
+}
+}

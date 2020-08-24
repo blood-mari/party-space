@@ -20,9 +20,6 @@
         <div class="container container--header">
             <a href="#" class="logo">
                 <img src="./images/logo.svg" alt="logo">
-                <!-- <svg width="110px" height="36"></svg>
-                    <use href="./images/Logo.png"></use>
-                </svg> -->
             </a>
             <nav>
                 <ul class="navbutton__list">
@@ -35,34 +32,39 @@
 
     <main>
         <section class="hero">
-            <div class="container">
-                <h1>
-                    Spice up your virtual events with <span>Party.</span>space
+            <div class="container container--hero">
+                <h1 class="hero__title">
+                    Spice up your virtual events with <span class="hero__title--accentparty">Party.</span>space
                 </h1>
-                <p>
+                <p class="hero__describtion">
                     No matter where you host your main event, Party.space can add an interactive spark to it. From customizable and cozy chat rooms to online games, challenges, and virtual after-party sessions, we’ve got you covered.
                 </p>
-                <ul>
-                    <li><a href="">Scedule a demo</a></li>
-                    <li>
-                        <a href="">Try it for free
-                          <svg width="12" hight="5">
-                            <use href="./images/sprite.svg#arrow"></use> </svg>
+                <ul class="hero__list">
+                    <li class="hero__button hero__button--calendar">
+                        <svg width="20" height="15" class="calendar">
+                            <use href="./images/sprite.svg#calendar"></use> </svg>
+                        <a class="hero__link" href="">Scedule a demo</a>
+                        </li>
+                    <li class="hero__button hero__button--arrow">
+                        <a class="hero__link" href="">Try it for free
+
                         </a>
+                        <svg width="15" height="10" class="arrowicon">
+                            <use href="./images/sprite.svg#arrow"></use> </svg>
                     </li>
                 </ul>
             </div>
         </section>
 
-        <section class="section section--usecases">
-            <div class="container">
+        <section class="section ">
+            <div class="container container--usecases">
                 <div class="usecases--describe">
-                    <h2>Don’t recreate an offline experience, just make the virtual one perfect</h2>
-                    <p>
+                    <h2 class="usecases__title">Don’t recreate an offline experience, just <span class="colorize">make the virtual one perfect</span></h2>
+                    <p class="usecases__description">
                         From small after-party sessions to enterprise-level corporate celebrations, Party.space allows you to host interactive virtual events of any size or complexity from the convenience of a single platform.
                     </p>
-                    <a href="">Try party.space
-                        <svg width="12" hight="5">
+                    <a class="usecases__link" href="">Try party.space
+                        <svg width="15" height="10">
                         <use href="./images/sprite.svg#arrow"></use>
                         </svg>
                     </a>
@@ -103,11 +105,11 @@
                           sizes="100vw"
                         />
 
-                        <img src="./images/features/mass-events-375.jpg" alt="conference hall"/>
+                        <img class="usecases__image" src="./images/features/mass-events-375.jpg" alt="conference hall"/>
                     </picture>
 
-                    <h3>Mass events</h3>
-                    <p>
+                    <h3 class="card__title">Mass events</h3>
+                    <p class="card__description">
                         Host full-featured events with multi-stage streaming, round-tables, keynote sessions, and cocktail parties for an unlimited number of attendees.
 
                     </p>
@@ -116,121 +118,177 @@
         </section>
 
         <section class="section section--features">
-            <div class="container">
-                <h2>
-                    Create events the way you <span>meant them</span> to be
+            <div class="container container--features">
+                <h2 class="features__title">
+                    Create events the way you <span class="accentfeatures">meant them</span> to be
                 </h2>
-                <svg><use></use></svg>
-                <p>Use whatever feature you want or combine them all to create a perfect virtual event experience for you and your attendees.</p>
-                <svg><use></use></svg>
+                <svg class="features__icon--left" width="97" height="22"><use href="./images/sprite.svg#feature-left"></use></svg>
 
-                <ul>
-                    <li>
-                        <div>
-                            <svg>
-                                <use href="./images/sprite.svg#customize-1"></use>
-                            </svg>
-                        </div>
-                        <h3>Customize and brand event space
+                <p class="features__description">Use whatever feature you want or combine them all to create a perfect virtual event experience for you and your attendees.</p>
+                <svg class="features__icon--right" width="108" height="24"><use href="./images/sprite.svg#feature-right"></use></svg>
 
-                        </h3>
-                        <p>Set up a virtual tribune, assign speakers, and invite your audience. People are sitting at round tables and discussing everything in the moment. This in-person experience is what the Tribune feature delivers.  </p>
-                    </li>
-                    <li>
-                        <div>
-                            <svg>
-                                <use href="./images/sprite.svg#volume-2"></use>
-                            </svg>
+                <ul class="features__list">
+                    <li class="features__item">
+                        <div class="features__item__pairs">
+                            <div class="features__imageblock customize">
+                                <svg class="features__icon" width="38" height="38">
+                                    <use href="./images/sprite.svg#customize-1"></use>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="itemtitle">Customize and brand event space
+                                </h3>
+                            </div>
                         </div>
-                        <h3>Volume fading effect</h3>
-                        <p>We add a sense of presence thro sound effect, just like in real life. The further you are from your interlocutor in one virtual space, the less you hear him and the better you hear those to whom you have just approached.
-                        </p>
-                    </li>
-                    <li>
-                        <div>
-                            <svg>
-                                <use href="./images/sprite.svg#chat-3"></use>
-                            </svg>
-                        </div>
-                        <h3>Chat rooms</h3>
-                        <p>Create multiple chat rooms for unlimited attendees to discuss whatever topic you want. Share graphics and videos, and moderate conversations in real-time.
+                         <p class="itemdescribe">Set up a virtual tribune, assign speakers, and invite your audience. People are sitting at round tables and discussing everything in the moment. This in-person experience is what the Tribune feature delivers.  </p>
 
-                        </p>
                     </li>
-                    <li>
-                        <div>
-                            <svg>
-                                <use href="./images/sprite.svg#tribune-4"></use>
-                            </svg>
-                        </div>
-                        <h3>Tribune</h3>
-                        <p>Set up a virtual tribune, assign speakers, and invite your audience. People are sitting at round tables and discussing everything in the moment. This in-person experience is what the Tribune feature delivers.   </p>
+                    <li class="features__item">
+                            <div class="features__item__pairs">
+                                <div class="features__imageblock volume">
+                                    <svg class="features__icon" width="40" height="30">
+                                        <use href="./images/sprite.svg#volume-2"></use>
+                                    </svg>
+                                </div>
+                                <div class="item__itemtitle">
+                                    <h3 class="itemtitle">Volume fading effect</h3>
+                                </div>
+                            </div>
+                           <p class="itemdescribe">We add a sense of presence thro sound effect, just like in real life. The further you are from your interlocutor in one virtual space, the less you hear him and the better you hear those to whom you have just approached.
+                            </p>
+
                     </li>
-                    <li>
-                        <div>
-                            <svg>
-                                <use href="./images/sprite.svg#contetnt-5"></use>
-                            </svg>
+                    <li class="features__item">
+                        <div class="features__item__pairs">
+                            <div class="features__imageblock chat">
+                                <svg class="features__icon" width="38" height="33">
+                                    <use href="./images/sprite.svg#chat-3"></use>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="itemtitle">Chat rooms</h3>
+                            </div>
                         </div>
-                        <h3>Content distribution</h3>
-                        <p>Easily share graphic, music, and video content in chat rooms or during video streaming sessions. Whether it’s marketing or keynote content, attendees will see it at the right time.</p>
+                        <div>
+                            <p class="itemdescribe">Create multiple chat rooms for unlimited attendees to discuss whatever topic you want. Share graphics and videos, and moderate conversations in real-time.
+
+                            </p>
+                        </div>
                     </li>
-                    <li>
-                        <div>
-                            <svg>
-                                <use href="./images/sprite.svg#interactiv-6"></use>
-                            </svg>
+                    <li class="features__item">
+                        <div class="features__item__pairs">
+                            <div class="features__imageblock tribune">
+                                <svg class="features__icon" width="32" height="38">
+                                    <use href="./images/sprite.svg#tribune-4"></use>
+                                </svg>
+                            </div>
+                                 <div>
+                                    <h3 class="itemtitle">Tribune</h3>
+                                 </div>
                         </div>
-                        <h3>Interactive activities
-                        </h3>
-                        <p>Add games and collaborative drawing panels to your event space. Attendees can break from your other activities, socialize, and engage in an informal manner.</p>
+
+                             <div>
+                                <p class="itemdescribe">Set up a virtual tribune, assign speakers, and invite your audience. People are sitting at round tables and discussing everything in the moment. This in-person experience is what the Tribune feature delivers.   </p>
+                            </div>
+
                     </li>
-                    <li>
-                        <div>
-                            <svg>
-                                <use href="./images/sprite.svg#document-7"></use>
-                            </svg>
+                    <li class="features__item">
+                        <div class="features__item__pairs">
+                            <div class="features__imageblock content">
+                                <svg class="features__icon" width="37" height="26">
+                                    <use href="./images/sprite.svg#contetnt-5"></use>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="itemtitle">Content distribution</h3>
+                            </div>
                         </div>
-                        <h3>Document collaboration
-                        </h3>
-                        <p>Get the most out of the real-time document collaboration. Share multiple screens, Miro or Figma slides, open Google docs and annotate them all in real-time. </p>
+                        <div>
+                            <p class="itemdescribe">Easily share graphic, music, and video content in chat rooms or during video streaming sessions. Whether it’s marketing or keynote content, attendees will see it at the right time.</p>
+                        </div>
                     </li>
-                    <li>
-                        <div>
-                            <svg>
-                                <use href="./images/sprite.svg#network-8"></use>
-                            </svg>
+                    <li class="features__item">
+                        <div class="features__item__pairs">
+                            <div class="features__imageblock interactiv">
+                                <svg class="features__icon" width="38" height="38">
+                                    <use href="./images/sprite.svg#interactiv-6"></use>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="itemtitle">Interactive activities
+                                </h3>
+                            </div>
                         </div>
-                        <h3>Networking</h3>
-                        <p>Set up round-tables, 1:1 sessions, or random chat rooms that allow your attendees to network for any occasion. Assign moderators to monitor discussions in real-time.</p>
+
+                            <p class="itemdescribe">Add games and collaborative drawing panels to your event space. Attendees can break from your other activities, socialize, and engage in an informal manner.</p>
+
                     </li>
-                    <li>
-                        <div>
-                            <svg>
-                                <use href="./images/sprite.svg#reaction-9"></use>
-                            </svg>
+                    <li class="features__item">
+                        <div class="features__item__pairs">
+                            <div class="features__imageblock document">
+                                <svg class="features__icon" width="34" height="24">
+                                    <use href="./images/sprite.svg#document-7"></use>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="itemtitle">Document collaboration
+                                </h3>
+                            </div>
                         </div>
-                        <h3>Reactions</h3>
-                        <p>Let attendees express what they feel with intuitive reactions. Every emotion an attendee expresses can be visible and combined with the overall experience of your audience.</p>
+
+                            <p class="itemdescribe">Get the most out of the real-time document collaboration. Share multiple screens, Miro or Figma slides, open Google docs and annotate them all in real-time. </p>
+
+                    </li>
+                    <li class="features__item">
+                        <div class="features__item__pairs">
+                            <div class="features__imageblock network">
+                                <svg class="features__icon" width="38" height="36">
+                                    <use href="./images/sprite.svg#network-8"></use>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="itemtitle">Networking
+
+                                </h3>
+                            </div>
+                        </div>
+                        <div>
+                            <p class="itemdescribe">Set up round-tables, 1:1 sessions, or random chat rooms that allow your attendees to network for any occasion. Assign moderators to monitor discussions in real-time.</p>
+                        </div>
+                    </li>
+                    <li class="features__item">
+                        <div class="features__item__pairs">
+                            <div class="features__imageblock reaction">
+                                <svg class="features__icon" width="36" height="36">
+                                    <use href="./images/sprite.svg#reaction-9"></use>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="itemtitle">Reactions</h3>
+                            </div>
+                        </div>
+                        <div>
+                            <p class="itemdescribe">Let attendees express what they feel with intuitive reactions. Every emotion an attendee expresses can be visible and combined with the overall experience of your audience.</p>
+                        </div>
+
                     </li>
                 </ul>
             </div>
         </section>
 
-        <section>
-            <div class="container">
-                <h2> <span>Flexible pricing</span> designed to satisfy your needs
+        <section class="section">
+            <div class="container container--prices">
+                <h2 class="prices__title"> <span class="titleaccent">Flexible pricing</span> designed to satisfy your needs
                 </h2>
-                <p>We start as low as <span>$0.3 per attendee for most simple events</span> and only go as high as <span>$3 per person for the most demanding and challenging corporate events.</span>
 
-                </p>
-                <p> Don’t hesitate to contact us for a personal quote as we are eager to familiarize you with Party.space and introduce you to the virtual event market.</p>
-                <ul>
-                    <li>
-                        <a href="">Request custom quote</a>
+                <p class="description">We start as low as <span class="priceaccent">$0.3 per attendee for most simple events</span> and only go as high as <span class="priceaccent">$3 per person for the most demanding and challenging corporate events.</span> </p>
+                <p class="description"> Don’t hesitate to contact us for a personal quote as we are eager to familiarize you with Party.space and introduce you to the virtual event market.</p>
+                <ul class="prices__list">
+                    <li class="prices__item">
+                        <a class="prices__link" href="">Request custom quote</a>
                     </li>
-                    <li>
-                        <a href="">Try it for free <svg width="12" hight="5">
+                    <li class="prices__item prices__item--arrow">
+                        <a class="prices__link prices__link" href="">Try it for free <svg width="15" height="10" class="arrowicon">
                             <use href="./images/sprite.svg#arrow"></use>
                         </svg>
                         </a>
@@ -242,14 +300,14 @@
     </main>
 
     <footer>
-        <div class="container">
+        <div class="container container--footer">
             <a href="#" class="logo">
                 <img src="./images/logo.svg" alt="logo">
             </a>
             <nav>
-                <ul>
-                    <li><a href="">Scedule a demo</a> </li>
-                    <li><a href="">Try it for free</a> </li>
+                <ul class="navbutton__list">
+                    <li><a class="navbutton__item" href="">Scedule a demo</a> </li>
+                    <li><a class="navbutton__item navbutton__item--free navbutton__item--color" href="">Try it for free</a> </li>
                 </ul>
             </nav>
         </div>
