@@ -21,7 +21,7 @@
 .prices {
     &__title {
         color: #fff;
-        font-size: 27px;
+        font-size: 25px;
         line-height: 1.25em;
         margin-bottom: 17px;
 
@@ -40,14 +40,14 @@
         background-color: #474A5A;
         display: block;
         @extend %button;
-        @extend %menu-button;
-        font-size: 1em;
+        padding: 10px 10px;
+        font-size: 15px;
 
         &--arrow {
             display: flex;
             justify-content: center;
             align-items: center;
-            margin-left: 1em;
+            margin-left: 10px;
             background-image: linear-gradient(180deg, #41C0FA 0%, #0EA3E8 100%);
 
             @media screen and (max-width: 500px){
