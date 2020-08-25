@@ -1,60 +1,123 @@
 .container {
     &--usecases {
-        @extend %section-padding-mobile;
+        padding-bottom: 50px;
         padding-top: 15px;
+
+        @media screen and (min-width: $tablet) {
+            padding-bottom: 75px;
+        padding-top: 25px;
+
+
+        }
+
+        @media screen and (min-width: 930px) {
+        display: flex;
+        justify-content: space-between;
+        }
+
+        @media screen and (min-width: $desktop) {
+            padding-top: 85px;
+        }
     }
 }
 .usecases {
+    &--describe {
+        @media screen and (min-width: 930px) {
+            margin-right: 50px;
+            max-width: 374px;
+        }
+
+        @media screen and (min-width: $desktop) {
+            margin-right: 94px;
+        }
+
+    }
+
     &__title {
         color: $main-header-color;
         font-size: 25px;
-        line-height: 1.25em;
+        line-height: 1.56em;
         margin-bottom: 17px;
+
         .colorize {
             color: #FBCC43;
         }
+        @media screen and (min-width: $tablet) {
+            font-size: 32px;
+        }
     }
     &__description {
-        font-size: 1.1em;
-        line-height: 1.56em;
+        font-size: 15px;
+        line-height: 1.62em;
         margin-bottom: 30px;
+
+        @media screen and (min-width: $tablet) {
+            font-size: 18px;
+        }
     }
 
     &__link {
         display: inline-block;
         @extend %button;
         @extend %menu-button;
-        font-size: 1em;
+        font-size: 15px;
         color: #fff;
         background-image: linear-gradient(180deg, #FBCC43 0%, #F0BD28 100%);
 
         margin-bottom: 36px;
 
-        @media screen and (max-width:500px){
+        @media screen and (max-width: $pre-tablet){
             min-width: 80px;
             padding: 12px 24px;
+        }
+        @media screen and (min-width: $tablet) {
+            font-size: 18px;
         }
     }
 
     &__image {
         border-radius: 13.63px;
-        margin-bottom: 19px;
+        margin-bottom: 22px;
     }
 
-    &--card {
+    &__card {
         background: linear-gradient(to bottom, #474A5A 0%, #343645 100%);
-        padding: 11px 10px 34px;
+        padding: 11px 10px 30px;
         border-radius: 13.63px;
+        position: relative;
+
+        &--draft {
+            @media screen and (max-width: 929px) {
+                display: none;
+            }
+            @media screen and (min-width: 930px) {
+            position: absolute;
+            top: -55px;
+            left: -40px;
+        }}
+
+        @media screen and (min-width: $tablet) {
+            padding: 25px 24px 30px;
+        }
 
         .card {
             &__title {
             color: $main-header-color;
             font-size: 1.5em;
             margin-bottom: 11px;
+            line-height: 1.56em;
+
+            @media screen and (min-width: $tablet) {
+                font-size: 32px;
+            }
         }
         &__description {
             line-height: 1.53em;
             color: #CDCDDB;
+
+            @media screen and (min-width: $tablet) {
+                font-size: 18px;
+            }
         }
     }
 

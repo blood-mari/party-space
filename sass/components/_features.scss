@@ -9,32 +9,147 @@
     &__title{
         color: #fff;
         font-size: 25px;
-        line-height: 1.25em;
+        line-height: 1.31em;
         margin-bottom: 17px;
+
+        @media screen and (min-width: $tablet) {
+            font-size: 32px;
+            text-align: center;
+        }
 
         .accentfeatures {
             color: #47B983;
-            transform: rotate(-180deg);
+
+            @media screen and (min-width: $tablet-max) {
+                position: relative;
+                font-size: 28px;
+             }
+         }
+
+
         }
-    }
+        &__icon--circle {
+            @media screen and (max-width: $tablet-max - 1px) {
+                    display: none;
+                }
+
+                @media screen and (min-width: $tablet-max) {
+                    transform: rotate(-180deg);
+                    position: absolute;
+                    top: -10px;
+                    left: -30px;
+                }
+        }
+
     &__description {
         font-size: 1.1em;
         line-height: 1.56em;
         margin-bottom: 30px;
+
+        @media screen and (min-width: $tablet) {
+            font-size: 18px;
+            text-align: center;
+            max-width: 580px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+    &__draft--position {
+
+        @media screen and (min-width: $tablet) {
+            margin-bottom: 80px;
+        }
+        @media screen and (min-width: $tablet-max) {
+            position: relative;
+            max-width: 900px;
+            margin-right: auto;
+            margin-left: auto;
+            margin-top: 20px;
+            margin-bottom: 100px;
+        }
+
+    }
+
+    &__icon--desctopleft {
+        @media screen and (min-width: $tablet-max) {
+            position: absolute;
+            top: 0;
+            left: -75px;
+        }
+    }
+
+    &__icon--desctopright {
+        @media screen and (min-width: $tablet-max) {
+            position: absolute;
+            top: 0;
+            right: -85px;
+        }
+    }
+
+    &__list {
+        @media screen and (min-width: $tablet) {
+            display: flex;
+            justify-content: space-between;
+            margin: -15px;
+            flex-wrap: wrap;
+
+        }
+
+        @media screen and (min-width: $tablet-max) {
+            margin: -30px;
+            flex-wrap: wrap;
+
+        }
     }
 
     &__item {
-        flex-wrap: wrap;
+        @media screen and (max-width: $pre-tablet) {
+            flex-wrap: wrap;
+        }
+        @media screen and (min-width: $tablet) {
+            display: flex;
+            width: calc((100% - 30px) / 2);
+            margin-left: 15px;
+            margin-bottom: 15px;
+            max-width: 527px;
+        }
+
+        @media screen and (min-width: $tablet-max) {
+            width: calc((100% - 70px) / 2);
+            margin-left: 30px;
+            margin-bottom: 30px;
+            max-width: 527px;
+        }
 
         &__pairs{
+            @media screen and (max-width: $pre-tablet) {
             display: inline-flex;
             align-items: center;
+            }
         }
 
         .itemtitle {
             color: #fff;
             font-size: 20px;
-            line-height: 1.25em;
+            line-height: 1.31em;
+
+            @media screen and (min-width: $tablet-max) {
+                font-size: 32px;
+            }
+
+            &.displaynone {
+                &__desktop{
+                    @media screen and (min-width: $tablet) {
+                        display: none;
+                    }
+                }
+
+                &__mobile {
+                    @media screen and (max-width: $pre-tablet) {
+                        display: none;
+                    }
+                }
+            }
         }
 
         .itemdescribe {
@@ -42,6 +157,10 @@
             line-height: 1.56em;
             margin-bottom: 30px;
             margin-top: 10px;
+
+            @media screen and (min-width: $tablet) {
+                font-size: 16px;
+            }
         }
     }
 
@@ -54,11 +173,32 @@
         align-items: center;
         margin-right: 15px;
 
+        @media screen and (min-width: $tablet-max) {
+            margin-right: 30px;
+            width: 64px;
+            height: 64px;
+        }
+
+        @media screen and (min-width: $desktop) {
+            margin-right: 50px;
+            width: 96px;
+            height: 96px;
+        }
+
         img {
             width: 50px;
             height: 50px;
-        }
 
+            @media screen and (min-width: $tablet-max) {
+                width: 60px;
+                height: 60px;
+            }
+
+            @media screen and (min-width: $desktop) {
+                width: 70px;
+                height: 70px;
+            }
+        }
 
         &.customize{
             background-image: linear-gradient(180deg, #FFD867 0%, #FBCC43 100%);
@@ -107,16 +247,34 @@
             background-image: linear-gradient(180deg, #FFD867 0%, #FBCC43 100%);
             box-shadow: inset 0px 4px 4px #FFE7A2, inset 0px -4px 4px rgba(0, 0, 0, 0.25);
         }
+
     }
 
     // &__icon {
     //     fill: $main-header-color;
     // }
+    &__draft {
+        @media screen and (min-width: $tablet) and (max-width: $tablet-max - 1px) {
+            display: flex;
+            justify-content: space-between;
+        }
 
-    @media screen and (max-width: 768px) {
-        &__icon--right, &__icon--left {
+        @media screen and (min-width: $tablet-max - 1px) {
             display: none;
         }
     }
 
+    &__desctop-draft {
+        @media screen and (max-width: $tablet-max - 1px) {
+            display: none;
+        }
+    }
+
+    &__icon {
+        &--right, &--left {
+    @media screen and (max-width: $pre-tablet) {
+        display: none;
+        }
+    }
+    }
 }

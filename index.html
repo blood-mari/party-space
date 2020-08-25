@@ -69,7 +69,8 @@
                         </svg>
                     </a>
                 </div>
-                <div class="usecases--card">
+                <div class="usecases__card">
+                    <svg class="usecases__card--draft" width="56" height="52"><use href="./images/sprite.svg#use-cases-draft"></use> </svg>
                     <picture>
                         <source
                           srcset="./images/features/mass-events.webp    719w,
@@ -119,13 +120,32 @@
 
         <section class="section section--features">
             <div class="container container--features">
-                <h2 class="features__title">
-                    Create events the way you <span class="accentfeatures">meant them</span> to be
-                </h2>
-                <svg class="features__icon--left" width="97" height="22"><use href="./images/sprite.svg#feature-left"></use></svg>
+                <div class="features__title--block">
+                    <h2 class="features__title">
+                        Create events the way you <span class="accentfeatures"> meant them
+                            <svg class="features__icon--circle" width="230" height="57"><use href="./images/sprite.svg#circle"></use></svg></span> to be
+                    </h2>
 
-                <p class="features__description">Use whatever feature you want or combine them all to create a perfect virtual event experience for you and your attendees.</p>
-                <svg class="features__icon--right" width="108" height="24"><use href="./images/sprite.svg#feature-right"></use></svg>
+                </div>
+
+
+                <div class="features__draft">
+                    <svg class="features__icon--left" width="97" height="22"><use href="./images/sprite.svg#feature-left"></use></svg>
+
+                    <svg class="features__icon--right" width="108" height="24"><use href="./images/sprite.svg#feature-right"></use></svg>
+                </div>
+
+                    <div class="features__draft--position">
+                        <p class="features__description">Use whatever feature you want or combine them all to create a perfect virtual event experience for you and your attendees.</p>
+
+                        <div class="features__desctop-draft">
+                            <svg class="features__icon--desctopleft" width="97" height="22"><use href="./images/sprite.svg#feature-left"></use></svg>
+
+                            <svg class="features__icon--desctopright" width="108" height="24"><use href="./images/sprite.svg#feature-right"></use></svg>
+                        </div>
+                    </div>
+
+
 
                 <ul class="features__list">
                     <li class="features__item">
@@ -133,55 +153,59 @@
                             <div class="features__imageblock customize">
                                 <img class="features__chat" src="./images/svg/customize.png" alt="gear icon">
                             </div>
-                            <div>
-                                <h3 class="itemtitle">Customize and brand event space
+                                <h3 class="itemtitle displaynone__desktop">Customize and brand event space
                                 </h3>
-                            </div>
+
                         </div>
-                         <p class="itemdescribe">Set up a virtual tribune, assign speakers, and invite your audience. People are sitting at round tables and discussing everything in the moment. This in-person experience is what the Tribune feature delivers.  </p>
+                        <div>
+                            <h3 class="itemtitle displaynone__mobile">Customize and brand event space</h3>
+
+                            <p class="itemdescribe">Set up a virtual tribune, assign speakers, and invite your audience. People are sitting at round tables and discussing everything in the moment. This in-person experience is what the Tribune feature delivers.  </p>
+                        </div>
 
                     </li>
                     <li class="features__item">
                             <div class="features__item__pairs">
                                 <div class="features__imageblock volume">
-                                    <img class="features__chat" src="./images/svg/volume.png" alt="volume icon">
+                                    <img src="./images/svg/volume.png" alt="volume icon">
                                 </div>
+                                    <h3 class="itemtitle displaynone__desktop">Volume fading effect</h3>
 
-                                    <h3 class="itemtitle">Volume fading effect</h3>
+                                </div>
+                                <div>
+                                    <h3 class="itemtitle displaynone__mobile">Volume fading effect</h3>
 
-                            </div>
-                           <p class="itemdescribe">We add a sense of presence thro sound effect, just like in real life. The further you are from your interlocutor in one virtual space, the less you hear him and the better you hear those to whom you have just approached.
-                            </p>
+                                    <p class="itemdescribe">We add a sense of presence thro sound effect, just like in real life. The further you are from your interlocutor in one virtual space, the less you hear him and the better you hear those to whom you have just approached.
+                                    </p>
+                                </div>
 
                     </li>
                     <li class="features__item">
                         <div class="features__item__pairs">
                             <div class="features__imageblock chat">
-
-                                <img class="features__chat" src="./images/svg/chat.png" alt="chat icon">
-
+                                <img src="./images/svg/chat.png" alt="chat icon">
                             </div>
+                            <h3 class="itemtitle displaynone__desktop">Chat rooms</h3>
+                        </div>
                             <div>
-                                <h3 class="itemtitle">Chat rooms</h3>
-                            </div>
-                        </div>
-                        <div>
-                            <p class="itemdescribe">Create multiple chat rooms for unlimited attendees to discuss whatever topic you want. Share graphics and videos, and moderate conversations in real-time.
+                                <h3 class="itemtitle displaynone__mobile">Chat rooms</h3>
 
-                            </p>
-                        </div>
+                                <p class="itemdescribe">Create multiple chat rooms for unlimited attendees to discuss whatever topic you want. Share graphics and videos, and moderate conversations in real-time.
+
+                                </p>
+                            </div>
                     </li>
                     <li class="features__item">
                         <div class="features__item__pairs">
                             <div class="features__imageblock tribune">
                                 <img class="features__chat" src="./images/svg/tribune.png" alt="tribune icon">
                             </div>
-                                 <div>
-                                    <h3 class="itemtitle">Tribune</h3>
-                                 </div>
-                        </div>
+                                <h3 class="itemtitle displaynone__desktop">Tribune</h3>
+                            </div>
 
                              <div>
+                                <h3 class="itemtitle displaynone__mobile">Tribune</h3>
+
                                 <p class="itemdescribe">Set up a virtual tribune, assign speakers, and invite your audience. People are sitting at round tables and discussing everything in the moment. This in-person experience is what the Tribune feature delivers.   </p>
                             </div>
 
@@ -192,11 +216,12 @@
                                 <img class="features__chat" src="./images/svg/content.png" alt="youtube icon">
 
                             </div>
-                            <div>
-                                <h3 class="itemtitle">Content distribution</h3>
+                                <h3 class="itemtitle displaynone__desktop">Content distribution</h3>
+
                             </div>
-                        </div>
                         <div>
+                            <h3 class="itemtitle displaynone__mobile">Content distribution</h3>
+
                             <p class="itemdescribe">Easily share graphic, music, and video content in chat rooms or during video streaming sessions. Whether it’s marketing or keynote content, attendees will see it at the right time.</p>
                         </div>
                     </li>
@@ -205,13 +230,15 @@
                             <div class="features__imageblock interactiv">
                                 <img class="features__chat" src="./images/svg/interactive.png" alt="gameplay icon">
                             </div>
-                            <div>
-                                <h3 class="itemtitle">Interactive activities
-                                </h3>
-                            </div>
-                        </div>
 
-                            <p class="itemdescribe">Add games and collaborative drawing panels to your event space. Attendees can break from your other activities, socialize, and engage in an informal manner.</p>
+                                <h3 class="itemtitle displaynone__desktop">Interactive activities
+                                </h3>
+                        </div>
+                            <div>
+                                <h3 class="itemtitle displaynone__mobile">Interactive activities</h3>
+
+                                <p class="itemdescribe">Add games and collaborative drawing panels to your event space. Attendees can break from your other activities, socialize, and engage in an informal manner.</p>
+                            </div>
 
                     </li>
                     <li class="features__item">
@@ -219,13 +246,14 @@
                             <div class="features__imageblock document">
                                 <img class="features__chat" src="./images/svg/document.png" alt="document icon">
                             </div>
-                            <div>
-                                <h3 class="itemtitle">Document collaboration
+                                <h3 class="itemtitle displaynone__desktop">Document collaboration
                                 </h3>
-                            </div>
                         </div>
+                            <div>
+                                <h3 class="itemtitle displaynone__mobile">Document collaboration</h3>
 
-                            <p class="itemdescribe">Get the most out of the real-time document collaboration. Share multiple screens, Miro or Figma slides, open Google docs and annotate them all in real-time. </p>
+                                <p class="itemdescribe">Get the most out of the real-time document collaboration. Share multiple screens, Miro or Figma slides, open Google docs and annotate them all in real-time. </p>
+                            </div>
 
                     </li>
                     <li class="features__item">
@@ -233,13 +261,13 @@
                             <div class="features__imageblock network">
                                 <img class="features__chat" src="./images/svg/network.png" alt="union icon">
                             </div>
-                            <div>
-                                <h3 class="itemtitle">Networking
 
-                                </h3>
-                            </div>
+                            <h3 class="itemtitle displaynone__desktop">Networking</h3>
+
                         </div>
                         <div>
+                            <h3 class="itemtitle displaynone__mobile">Networking</h3>
+
                             <p class="itemdescribe">Set up round-tables, 1:1 sessions, or random chat rooms that allow your attendees to network for any occasion. Assign moderators to monitor discussions in real-time.</p>
                         </div>
                     </li>
@@ -248,11 +276,11 @@
                             <div class="features__imageblock reaction">
                                 <img class="features__chat" src="./images/svg/reaction.png" alt="smile icon">
                             </div>
-                            <div>
-                                <h3 class="itemtitle">Reactions</h3>
-                            </div>
+                                <h3 class="itemtitle displaynone__desktop">Reactions</h3>
                         </div>
                         <div>
+                            <h3 class="itemtitle displaynone__mobile">Reactions</h3>
+
                             <p class="itemdescribe">Let attendees express what they feel with intuitive reactions. Every emotion an attendee expresses can be visible and combined with the overall experience of your audience.</p>
                         </div>
 

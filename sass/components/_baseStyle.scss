@@ -36,6 +36,11 @@ body {
     letter-spacing: normal;
     color: $main-text-color;
     background-color: $main-backgound-color;
+
+  @media screen and (min-width: $tablet) {
+    font-size: 18px;
+    line-height: 1.55em;
+  }
 }
 
 .container{
@@ -44,7 +49,16 @@ body {
     margin: 0 auto 0;
     padding-left: 10px;
     padding-right: 10px;
-    @media screen and (min-width: $desktop) {
+
+    @media screen and (min-width: $tablet) {
+      padding-left: 24px;
+    padding-right: 24px;
+    }
+    @media screen and (min-width: $tablet-max) {
+      padding-left: 70px;
+      padding-right: 70px;
+    }
+    @media screen and (min-width: 1440px) {
         width: calc(100% - 240px);
         padding-left: 120px;
         padding-right: 120px;

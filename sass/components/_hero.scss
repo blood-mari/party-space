@@ -1,15 +1,36 @@
 .container {
     &--hero {
+
+        max-width: 865px;
         text-align: center;
-        @extend %section-padding-mobile;
+        padding-top: 53px;
+        padding-bottom: 49px;
+
+        @media screen and (min-width: $tablet) {
+            padding-top: 100px;
+            padding-bottom: 100px;
+        }
+        @media screen and (min-width: $desktop) {
+            padding-top: 150px;
+            padding-bottom: 220px;
+        }
     }
 }
 .hero {
     &__title {
         color: $main-header-color;
         font-size: 30px;
-        line-height: 1.25em;
+        line-height: 1.15em;
         margin-bottom: 17px;
+        @media screen and (min-width: $tablet) {
+            font-size: 52px;
+            line-height: 1.05em;
+            margin-bottom: 30px;
+          }
+          @media screen and (min-width: $desktop) {
+            font-size: 72px;
+
+          }
 
         &--accentparty {
             background: radial-gradient(40.52% 94.86% at 85.37% -3.86%, #FF9431 0%, rgba(148,99,255,0) 100%),linear-gradient(94.38deg, #17C7FF 4.5%, #FF4DED 91.01%);
@@ -19,9 +40,13 @@
         }
     }
     &__describtion{
-        font-size: 1.1em;
+        font-size: 16px;
         line-height: 1.56em;
         margin-bottom: 30px;
+
+        @media screen and (min-width: $tablet) {
+            font-size: 18px;
+        }
     }
 
     &__list {
@@ -53,9 +78,10 @@
             align-items: center;
             margin-left: 15px;
             background-image: linear-gradient(180deg, #794AFF 0%, #642EFF 100%);
-            @media screen and (max-width:500px){
+            @media screen and (max-width: $pre-tablet){
                 display: none;
             }
+
         }
         .arrowicon {
             margin-left: 10px;
@@ -64,7 +90,7 @@
         .calendar {
             margin-right: 7px;
         }
-        @media screen and (max-width:500px){
+        @media screen and (max-width: $pre-tablet){
             min-width: 80px;
             padding: 12px 24px;
         }
