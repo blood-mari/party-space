@@ -29,11 +29,11 @@
 
         }
         &__icon--circle {
-            @media screen and (max-width: $tablet-max - 1px) {
+            @media screen and (max-width: 779px) {
                     display: none;
                 }
 
-                @media screen and (min-width: $tablet-max) {
+                @media screen and (min-width: 780px) {
                     transform: rotate(-180deg);
                     position: absolute;
                     top: -10px;
