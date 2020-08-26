@@ -70,7 +70,7 @@
 
     }
 
-    &__icon--desctopleft {
+    &__icon--desktopleft {
         @media screen and (min-width: $tablet-max) {
             position: absolute;
             top: 0;
@@ -78,7 +78,7 @@
         }
     }
 
-    &__icon--desctopright {
+    &__icon--desktopright {
         @media screen and (min-width: $tablet-max) {
             position: absolute;
             top: 0;
@@ -264,7 +264,7 @@
         }
     }
 
-    &__desctop-draft {
+    &__desktop-draft {
         @media screen and (max-width: $tablet-max - 1px) {
             display: none;
         }

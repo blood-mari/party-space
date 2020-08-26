@@ -232,14 +232,14 @@ body {
   color: transparent;
 }
 
-.hero__describtion {
+.hero__description {
   font-size: 16px;
   line-height: 1.56em;
   margin-bottom: 30px;
 }
 
 @media screen and (min-width: 500px) {
-  .hero__describtion {
+  .hero__description {
     font-size: 18px;
   }
 }
@@ -548,7 +548,7 @@ body {
 }
 
 @media screen and (min-width: 768px) {
-  .features__icon--desctopleft {
+  .features__icon--desktopleft {
     position: absolute;
     top: 0;
     left: -75px;
@@ -556,7 +556,7 @@ body {
 }
 
 @media screen and (min-width: 768px) {
-  .features__icon--desctopright {
+  .features__icon--desktopright {
     position: absolute;
     top: 0;
     right: -85px;
@@ -793,7 +793,7 @@ body {
 }
 
 @media screen and (max-width: 767px) {
-  .features__desctop-draft {
+  .features__desktop-draft {
     display: none;
   }
 }
