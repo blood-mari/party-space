@@ -83,8 +83,12 @@
     &__card {
         background: linear-gradient(to bottom, #474A5A 0%, #343645 100%);
         padding: 11px 10px 30px;
-        border-radius: 15px;
+        border-radius: 20px;
         position: relative;
+
+        img {
+            border-radius: 20px;
+        }
 
         &--draft {
             @media screen and (max-width: 929px) {

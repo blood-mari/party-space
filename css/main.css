@@ -416,8 +416,12 @@ body {
   background: -webkit-gradient(linear, left top, left bottom, from(#474A5A), to(#343645));
   background: linear-gradient(to bottom, #474A5A 0%, #343645 100%);
   padding: 11px 10px 30px;
-  border-radius: 15px;
+  border-radius: 20px;
   position: relative;
+}
+
+.usecases__card img {
+  border-radius: 20px;
 }
 
 @media screen and (max-width: 929px) {
