@@ -66,6 +66,14 @@
 
         margin-bottom: 36px;
 
+        @media screen and (min-width: 300px) {
+            word-wrap: none;
+        }
+
+        .arrowicon {
+            margin-left: 3px;
+        }
+
         @media screen and (max-width: $pre-tablet){
             min-width: 80px;
             padding: 12px 24px;
