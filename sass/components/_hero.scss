@@ -67,7 +67,7 @@
         background: #474A5A;
 
         @media screen and (min-width: 300px) {
-            word-wrap: none;
+            white-space: nowrap;
         }
 
         &--calendar {
